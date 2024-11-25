@@ -1,0 +1,152 @@
+Experiment 1: How to Install PIP on Windows?
+
+Before we start with how to install pip for Python on Windows, let’s first go through the basic
+introduction to Python. Python is a widely-used general-purpose, high-level programming language.
+Python is a programming language that lets you work quickly and integrate systems more efficiently.
+PIP is a package management system used to install and manage software packages/libraries written
+in Python. These files are stored in a large “on-line repository” termed as Python Package Index
+(PyPI). pip uses PyPI as the default source for packages and their dependencies. 
+
+So whenever you type: Download and Install pip:
+pip can be downloaded and installed using command-line by going through the following steps:
+● Download the get-pip.py file and store it in the same directory as python is installed.
+● Change the current path of the directory in the command line to the path of the directory where the
+above file exists.
+● Run the command given below: python get-pip.py and wait through the installation process. pip
+is now installed on your system.
+
+Verification of the Installation process:
+One can easily verify if the pip has been installed correctly by performing a version check on the same.
+Just go to the command line and execute the following command:
+pip -V
+
+To Install Various Packages using PIP : 
+Syntax : pip install <package_name> pip will look for that package on PyPI and if found, 
+it will download and install the package on your local system.
+Packages :
+a) Numpy:
+NumPy is a Python package. It stands for 'Numerical Python'. It is a library consisting of
+multidimensional array objects and a collection of routines for processing of array.
+Numeric, the ancestor of NumPy, was developed by Jim Hugunin. Another package Numarray was
+also developed, having some additional functionalities. In 2005, Travis Oliphant created NumPy
+package by incorporating the features of Numarray into Numeric package. There are many
+contributors to this open source project.
+Operations using NumPy
+Using NumPy, a developer can perform the following operations − ●
+Mathematical and logical operations on arrays.
+● Fourier transforms and routines for shape manipulation.
+● Operations related to linear algebra. NumPy has in-built functions for linear algebra and random
+number generation.
+
+NumPy – A Replacement for MatLab
+NumPy is often used along with packages like SciPy (Scientific Python) and Mat−plotlib (plotting
+library). This combination is widely used as a replacement for MatLab, a popular platform for
+technical computing. However, Python alternative to MatLab is now seen as a more modern and
+complete programming language.
+It is open source, which is an added advantage of NumPy
+
+b) Scipy:
+SciPy, pronounced as Sigh Pi, is a scientific python open source, distributed under the BSD licensed
+library to perform Mathematical, Scientific and Engineering Computations.
+The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array
+manipulation. The SciPy library is built to work with NumPy arrays and provides many userfriendly
+and efficient numerical practices such as routines for numerical integration and optimization.
+Together, they run on all popular operating systems, are quick to install and are free of charge. NumPy
+and SciPy are easy to use, but powerful enough to depend on by some of the world's leading scientists
+and engineers.
+
+SciPy Sub-packages
+SciPy is organized into sub-packages covering different scientific computing domains. These are
+summarized in the following table –
+
+scipy.cluster	 Vector quantization / Kmeans
+scipy.constants	 Physical and mathematical
+		constants
+scipy.fftpack 	Fourier transform
+scipy.integrate	 Integration routines
+scipy.interpolate	 Interpolation
+scipy.io		 Data input and output
+scipy.linalg	 Linear algebra routines
+scipy.ndimage	 n-dimensional image package
+scipy.odr	 Orthogonal distance regression
+scipy.optimize	 Optimization
+scipy.signal	 Signal processing
+scipy.sparse	 Sparse matrices
+scipy.spatial	 Spatial data structures
+		and algorithms
+scipy.special	 Any special
+		mathematical
+		functions
+scipy.stats	 Statistics
+
+c) matplotlib
+● plot(x, y): plot x and y using default line style and color.
+● plot.axis([xmin, xmax, ymin, ymax]): scales the x-axis and y-axis from minimum to maximum
+values
+● plot.(x, y, color=’green’, marker=’o’, linestyle=’dashed’, linewidth=2, markersize=12): x and y
+co-ordinates are marked using circular markers of size 12 and green color line with — style of width
+2
+● plot.xlabel(‘X-axis’): names x-axis ● plot.ylabel(‘Y-axis’): names y-axis
+● plot(x, y, label = ‘Sample line ‘) plotted Sample Line will be displayed as a legend
+
+d) scikit-learn
+Scikit-Learn, also known as sklearn is a python library to implement machine learning models and
+statistical modelling. Through scikit-learn, we can implement various machine learning models for
+regression, classification, clustering, and statistical tools for analyzing these models. It also provides
+functionality for dimensionality reduction, feature selection, feature extraction, ensemble
+techniques, and inbuilt datasets. We will be looking into these features one by one. This library is
+built upon NumPy, SciPy, and Matplotlib.
+
+
+
+How to install PIP on windows?
+---------------------------
+
+Here's a step-by-step guide on how to install pip on Windows:
+
+Method 1: Using the get-pip.py script
+
+Download the script:
+
+Go to https://bootstrap.pypa.io/get-pip.py and download the get-pip.py script.
+Save it to a convenient location on your computer, such as your Downloads folder.
+Open a command prompt:
+
+Press the Windows key, type "cmd," and press Enter.
+Navigate to the script's directory:
+
+Use the cd command to navigate to the directory where you saved the get-pip.py script. For example, if you saved it to your Downloads folder, you would type:
+cd Downloads
+Run the script:
+
+Type the following command and press Enter:
+python get-pip.py
+Verify the installation:
+
+Open a new command prompt and type:
+pip --version
+If the installation was successful, you should see the installed pip version.
+Method 2: Using ensurepip
+
+If you have a recent Python installation (3.4 or later), you can use the ensurepip module to install pip:
+
+Open a command prompt.
+Type the following command and press Enter:
+python -m ensurepip --upgrade
+Adding pip to your system's PATH (optional but recommended):
+
+This step allows you to run pip from any command prompt, without navigating to its directory.
+
+Open the System Properties window:
+Press the Windows key, type "environment variables," and press Enter.
+Click on "Environment Variables."
+Under "System variables," find the "Path" variable and click "Edit."
+Click "New" and add the path to your Python scripts directory. This is usually something like C:\Python310\Scripts.
+Click "OK" to save the changes.
+Now you can use pip to install Python packages from the command prompt. For example, to install the requests package, you would type:
+
+pip install requests
+
+
+
+
